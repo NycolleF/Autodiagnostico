@@ -27,7 +27,31 @@ const BASE_FALLBACK = {
     "luz da temperatura acesa": ["superaquecimento do motor", "falta de liquido de arrefecimento", "sensor de temperatura com defeito"],
     "carro puxando para um lado": ["alinhamento fora do padrao", "calibragem irregular dos pneus", "problema no sistema de freio"],
     "chiado ao ligar": ["correia do alternador gasta", "polia desalinhada", "tensor frouxo"],
-    "dificuldade para trocar marcha": ["embreagem desgastada", "nivel de oleo da caixa baixo", "trambulador desregulado"]
+    "dificuldade para trocar marcha": ["embreagem desgastada", "nivel de oleo da caixa baixo", "trambulador desregulado"],
+    "farol nao acende": ["lampada queimada", "fusivel do farol aberto", "modulo de iluminacao com falha"],
+    "bateria descarregando rapido": ["alternador com defeito", "corrente de fuga eletrica", "bateria velha ou sulfatada"],
+    "carro derrapando na chuva": ["pneus carecas", "profundidade do sulco abaixo do minimo", "pressao dos pneus incorreta"],
+    "travamento inesperado das rodas": ["sistema abs com falha", "pastilha de freio travada", "pinca de freio presa"],
+    "ruido metalico no motor": ["folga nos tuchos", "biela batendo", "nivel de oleo muito baixo"],
+    "carro solavancos na estrada": ["amortecedores gastos", "molas quebradas", "pneu com bolha"],
+    "luz do airbag acesa": ["sensor de impacto com falha", "modulo do airbag com defeito", "conector solto sob o banco"],
+    "consumo alto de oleo": ["retentor de valvula desgastado", "aneis de pistao gastos", "vazamento interno na junta do cabecote"],
+    "cheiro de queimado": ["correia do alternador raspando", "embreagem patinando", "fiacao eletrica com aquecimento"],
+    "pedal de embreagem duro": ["cabo de embreagem ressecado", "cilindro escravo com defeito", "mola do pedal travada"],
+    "carro engasgando ao frear": ["velas de ignicao gastas", "carburador desregulado", "bobina com falha intermitente"],
+    "luz de pressao dos pneus acesa": ["pneu com pressao baixa", "sensor tpms com defeito", "pneu furado"],
+    "freio de mao nao segura": ["cabo do freio de mao esticado", "sapata traseira desgastada", "regulagem do freio traseiro necessaria"],
+    "carro com dificuldade no frio": ["bateria com capacidade reduzida pelo frio", "oleo do motor muito viscoso", "velas de ignicao fracas"],
+    "porta nao fecha bem": ["dobradicca desalinhada", "borracha de vedacao ressecada", "trinco da porta com defeito"],
+    "cinto de seguranca nao recolhe": ["mecanismo retrator travado", "cinto torcido", "mola do retrator quebrada"],
+    "banco eletrico nao ajusta": ["motor do banco queimado", "fusivel do banco aberto", "trilho do banco travado"],
+    "som de estalido ao arrancar": ["junta homocinetica com desgaste", "coifa da homocinetica rasgada", "cruzeta do cardan com folga"],
+    "carro balancando em alta velocidade": ["rodas desbalanceadas", "pneu com deformacao", "cubo de roda com folga"],
+    "caixa automatica nao engata": ["oleo do cambio baixo ou oxidado", "solenoide do cambio com defeito", "sensor de posicao do seletor com falha"],
+    "motor sem pressao de oleo": ["bomba de oleo desgastada", "filtro de oleo entupido", "nivel de oleo muito baixo"],
+    "escapamento barulhento": ["junta do escapamento estourada", "silencioso perfurado", "intermediario solto"],
+    "carro fazendo bolha no radiador": ["junta do cabecote estourada", "cabecote trincado", "tampa do radiador com defeito"],
+    "alarme disparando sozinho": ["sensor de presenca com sensibilidade alta", "bateria interna do controle fraca", "sensor de impacto mal calibrado"]
 };
 
 let baseProblemas = {};
