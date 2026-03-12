@@ -1,0 +1,177 @@
+{
+    "carro nao liga": [
+        "bateria fraca",
+        "motor de arranque",
+        "problema no alternador"
+    ],
+    "carro nao da partida": [
+        "bateria descarregada",
+        "motor de arranque com defeito",
+        "rele de partida com falha"
+    ],
+    "barulho no freio": [
+        "pastilha gasta",
+        "disco empenado",
+        "falta de lubrificacao"
+    ],
+    "pedal de freio baixo": [
+        "vazamento no sistema de freio",
+        "ar no sistema hidraulico",
+        "fluido de freio baixo"
+    ],
+    "carro falhando": [
+        "velas desgastadas",
+        "problema na bobina",
+        "combustivel ruim"
+    ],
+    "motor engasgando": [
+        "filtro de combustivel sujo",
+        "bicos injetores sujos",
+        "entrada de ar falsa"
+    ],
+    "luz da bateria acesa": [
+        "bateria fraca",
+        "problema no alternador",
+        "correia solta"
+    ],
+    "carro treme quando acelera": [
+        "velas",
+        "bicos",
+        "coxim do motor"
+    ],
+    "luz de injecao acesa": [
+        "sonda lambda com falha",
+        "combustivel adulterado",
+        "sensor map com defeito"
+    ],
+    "consumo alto de combustivel": [
+        "filtro de ar sujo",
+        "bicos injetores desregulados",
+        "sensor de oxigenio com defeito"
+    ],
+    "cheiro de gasolina": [
+        "vazamento na linha de combustivel",
+        "tampa do tanque mal vedada",
+        "canister saturado"
+    ],
+    "motor esquentando": [
+        "falta de aditivo no radiador",
+        "valvula termostatica travada",
+        "eletroventilador inoperante"
+    ],
+    "vazamento de oleo": [
+        "retentor ressecado",
+        "junta da tampa de valvulas danificada",
+        "bujao de carter frouxo"
+    ],
+    "direcao pesada": [
+        "fluido da direcao baixo",
+        "bomba da direcao com desgaste",
+        "correia da bomba frouxa"
+    ],
+    "ar condicionado nao gela": [
+        "gas refrigerante baixo",
+        "compressor com falha",
+        "filtro de cabine obstruido"
+    ],
+    "fumaca branca no escape": [
+        "entrada de agua na camara",
+        "junta do cabecote danificada",
+        "condensacao excessiva em motor frio"
+    ],
+    "fumaca azul no escape": [
+        "queima de oleo do motor",
+        "aneis de pistao desgastados",
+        "retentor de valvula comprometido"
+    ],
+    "fumaca preta no escape": [
+        "mistura rica de combustivel",
+        "filtro de ar muito sujo",
+        "sensor de temperatura com falha"
+    ],
+    "barulho na suspensao": [
+        "buchas desgastadas",
+        "amortecedor com folga",
+        "bieleta danificada"
+    ],
+    "vibracao no volante": [
+        "rodas desbalanceadas",
+        "pneu deformado",
+        "desalinhamento da direcao"
+    ],
+    "luz do oleo acesa": [
+        "nivel de oleo baixo",
+        "bomba de oleo com falha",
+        "sensor de pressao do oleo defeituoso"
+    ],
+    "luz da temperatura acesa": [
+        "superaquecimento do motor",
+        "falta de liquido de arrefecimento",
+        "sensor de temperatura com defeito"
+    ],
+    "carro puxando para um lado": [
+        "alinhamento fora do padrao",
+        "calibragem irregular dos pneus",
+        "problema no sistema de freio"
+    ],
+    "chiado ao ligar": [
+        "correia do alternador gasta",
+        "polia desalinhada",
+        "tensor frouxo"
+    ],
+    "dificuldade para trocar marcha": [
+        "embreagem desgastada",
+        "nivel de oleo da caixa baixo",
+        "trambulador desregulado"
+    ],
+    "carro morre em marcha lenta": [
+        "atuador de marcha lenta sujo",
+        "corpo de borboleta carbonizado",
+        "entrada de ar falsa"
+    ],
+    "luz abs acesa": [
+        "sensor de roda com falha",
+        "modulo abs com anomalia",
+        "chicote do abs danificado"
+    ],
+    "barulho ao esterçar": [
+        "junta homocinetica desgastada",
+        "terminal de direcao com folga",
+        "coifa rasgada"
+    ],
+    "carro sem forca na subida": [
+        "filtro de combustivel obstruido",
+        "compressao baixa no motor",
+        "embreagem patinando"
+    ],
+    "partida demorada": [
+        "pressao de combustivel baixa",
+        "bateria fraca",
+        "sensor de rotacao com falha"
+    ],
+    "luz epc acesa": [
+        "corpo de borboleta com falha",
+        "sensor do pedal do acelerador",
+        "problema eletrico na injeção"
+    ],
+    "tranco ao trocar marcha": [
+        "oleo do cambio vencido",
+        "solenoide do cambio com defeito",
+        "coxim do cambio desgastado"
+    ],
+    "ruido no rolamento": [
+        "rolamento de roda gasto",
+        "falta de lubrificacao",
+        "desgaste irregular do cubo"
+    ],
+    "ar quente nao funciona": [
+        "radiador de ar quente obstruido",
+        "atuador de mistura travado",
+        "baixo nivel de liquido"
+    ],
+    "vidro eletrico nao sobe": [
+        "motor do vidro queimado",
+        "fusivel do vidro aberto",
+        "interruptor com defeito"
+    ]
+}

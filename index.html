@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoDiagnostico | Detector de Problemas por Sintoma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <p class="kicker">TopGear Auto Center</p>
+                <button id="btn-tema" class="btn-theme" type="button" aria-label="Alternar tema">Tema escuro</button>
+            </div>
+            <h1>AutoDiagnostico</h1>
+            <p class="subtitle">Digite um ou mais sintomas e receba causas provaveis em segundos.</p>
+        </header>
+
+        <main>
+            <section class="card diagnostic-section">
+                <h2>Diagnostico Automotivo</h2>
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label for="problema">Problema ou sintoma</label>
+                        <input id="problema" type="text" placeholder="Ex.: carro nao liga, luz da bateria acesa" />
+                    </div>
+                    <div class="input-group">
+                        <label for="placa">Placa (opcional)</label>
+                        <input id="placa" type="text" placeholder="Ex.: ABC1D23" maxlength="8" />
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="btn-diagnosticar" id="btn-diagnosticar" type="button">Diagnosticar</button>
+                </div>
+                <p class="hint">Dica: sem acentos funciona melhor. Ex.: "luz de injecao acesa".</p>
+            </section>
+
+            <section class="card result-section" id="resultado" hidden>
+                <h3>Possiveis causas</h3>
+                <p id="resumo-resultado" class="hint"></p>
+                <div id="sintomas-relacionados" class="chips"></div>
+                <ul id="causas-list"></ul>
+                <div class="actions">
+                    <button class="btn-salvar" id="btn-salvar" type="button">Salvar no historico</button>
+                </div>
+                <p class="aviso">
+                    Aviso importante: este resultado e apenas informativo. Nao substitui avaliacao tecnica.
+                    Para seguranca, procure sempre um mecanico de confianca.
+                </p>
+            </section>
+
+            <section class="card history-section">
+                <div class="section-head">
+                    <h3>Historico de diagnosticos</h3>
+                    <button class="btn-secondary" id="btn-limpar" type="button">Limpar</button>
+                </div>
+                <div class="input-group">
+                    <label for="filtro-sintoma">Pesquisar por sintoma</label>
+                    <input id="filtro-sintoma" type="text" placeholder="Ex.: carro nao liga" />
+                </div>
+                <div id="historico-list"></div>
+            </section>
+
+            <section class="card add-sintoma-section">
+                <h3>Adicionar novo sintoma</h3>
+                <div class="input-group">
+                    <label for="novo-sintoma">Novo sintoma</label>
+                    <input id="novo-sintoma" type="text" placeholder="Ex.: estalo ao virar" />
+                </div>
+                <div class="input-group">
+                    <label for="novas-causas">Causas (separadas por virgula)</label>
+                    <input id="novas-causas" type="text" placeholder="Ex.: terminal de direcao, coifa rasgada" />
+                </div>
+                <div class="actions">
+                    <button class="btn-adicionar" id="btn-adicionar" type="button">Adicionar sintoma</button>
+                </div>
+                <p class="hint">Esse cadastro fica salvo no navegador para futuras consultas.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>AutoDiagnostico - Projeto de portfolio para triagem inicial de sintomas automotivos.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
