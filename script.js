@@ -198,7 +198,7 @@ function renderHistorico() {
         : historico;
 
     if (!filtrado.length) {
-        elHistorico.innerHTML = '<p class="empty">Nenhum diagnostico encontrado.</p>';
+        elHistorico.innerHTML = '<p class="empty">Nenhum diagnóstico encontrado.</p>';
         return;
     }
 
@@ -209,7 +209,7 @@ function renderHistorico() {
             (item) => `
                 <article class="diagnostico-item">
                     <h4>${item.problema}</h4>
-                    <p><strong>Placa:</strong> ${item.placa || "Nao informada"}</p>
+                    <p><strong>Placa:</strong> ${item.placa || "Não informada"}</p>
                     <p><strong>Data:</strong> ${formatarData(item.data)}</p>
                     <p><strong>Causas:</strong> ${item.causas.join(" | ")}</p>
                 </article>
@@ -269,15 +269,15 @@ function diagnosticarPorRelevancia(entrada) {
             if (score >= 130) {
                 nivel = "alta";
             } else if (score >= 70) {
-                nivel = "media";
+                nivel = "média";
             }
 
-            return `${causa} (relevancia ${nivel})`;
+            return `${causa} (relevância ${nivel})`;
         });
 
     const resumo = consultas.length > 1
-        ? `Analise combinada de ${consultas.length} sintomas informados.`
-        : "Analise baseada no sintoma informado.";
+        ? `Análise combinada de ${consultas.length} sintomas informados.`
+        : "Análise baseada no sintoma informado.";
 
     return {
         tipo: "encontrado",
@@ -315,17 +315,17 @@ function diagnosticar() {
 
     if (busca.tipo === "nenhum") {
         elResultado.hidden = false;
-        elResumoResultado.textContent = "Nao houve correspondencia forte para os sintomas informados.";
+        elResumoResultado.textContent = "Não houve correspondência forte para os sintomas informados.";
         elSintomasRelacionados.innerHTML = "";
         renderCausas([
-            "Nao encontramos esse sintoma na base atual.",
-            "Use o formulario 'Adicionar novo sintoma' para ensinar o sistema.",
-            "Leve o veiculo a um mecanico de confianca para avaliacao segura."
+            "Não encontramos esse sintoma na base atual.",
+            "Use o formulário 'Adicionar novo sintoma' para ensinar o sistema.",
+            "Leve o veículo a um mecânico de confiança para avaliação segura."
         ]);
         diagnosticoAtual = {
             problema: problemaOriginal,
             placa,
-            causas: ["Sem diagnostico na base"],
+            causas: ["Sem diagnóstico na base"],
             data: new Date().toISOString()
         };
         return;
@@ -346,7 +346,7 @@ function diagnosticar() {
 
 function salvarDiagnosticoAtual() {
     if (!diagnosticoAtual) {
-        alert("Faça um diagnostico antes de salvar.");
+        alert("Faça um diagnóstico antes de salvar.");
         return;
     }
 
@@ -355,7 +355,7 @@ function salvarDiagnosticoAtual() {
     salvarHistorico(historico);
     renderHistorico();
 
-    alert("Diagnostico salvo no historico.");
+    alert("Diagnóstico salvo no histórico.");
 }
 
 function adicionarSintoma() {
@@ -383,7 +383,7 @@ function adicionarSintoma() {
 }
 
 function limparHistorico() {
-    const confirmar = confirm("Deseja limpar todo o historico?");
+    const confirmar = confirm("Deseja limpar todo o histórico?");
     if (!confirmar) {
         return;
     }
@@ -418,7 +418,7 @@ async function iniciar() {
         renderHistorico();
     } catch (erro) {
         console.error("Erro ao carregar base de sintomas:", erro);
-        alert("Nao foi possivel carregar os dados do sistema.");
+        alert("Não foi possível carregar os dados do sistema.");
     }
 
     elBtnDiagnosticar.addEventListener("click", diagnosticar);
