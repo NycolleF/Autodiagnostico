@@ -15,6 +15,14 @@ Detector de problemas automotivos por sintoma: o usuário descreve o que o carro
 - Cadastro de novos sintomas e causas, salvo no navegador (localStorage)
 - Tema claro e escuro
 
+## O que pratiquei neste projeto
+
+- Ler os sintomas e causas de um arquivo JSON com `fetch`
+- Buscar sem ligar para acento ou maiúscula
+- Ordenar as causas pela relevância
+- Guardar o histórico no navegador com `localStorage`
+- Tema claro e escuro
+
 ## Tecnologias
 
 - HTML
