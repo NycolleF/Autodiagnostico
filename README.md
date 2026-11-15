@@ -2,6 +2,10 @@
 
 Detector de problemas automotivos por sintoma: o usuário descreve o que o carro está apresentando e recebe as causas mais prováveis em segundos.
 
+**[Testar online](https://nycollef.github.io/Autodiagnostico/)**
+
+![Resultado de um diagnóstico](print.jpg)
+
 ## Funcionalidades
 
 - Busca por um ou mais sintomas (ex.: "luz de injecao acesa")
